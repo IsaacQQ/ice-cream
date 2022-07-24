@@ -1,4 +1,4 @@
-   @include small{
+@include small{
     max-width: 320px;
     padding: 0px 0px;
    }
@@ -17,35 +17,37 @@
 .activity__background{
     /* width: 1200px;
     height: 521px; */
-    background-image: url(../images/mobile/about-milk-bgr.png);
+    background-image: url(../images/milk.png);
     background-repeat: no-repeat;
     z-index: 3;
    background-position: center;
    background-size: 100%;
    height: 521px;
-   @include tablet{
+   @media screen and (min-width: 767px) and (max-width: 1199px){
     background-image: none;
    }
-   @include mobile{
+   @media screen and (min-width: 480px) and (max-width: 767px){
     height: 985px;
     padding: none;
    }
-   @include small{
+   @media screen and (min-width: 320px) and (max-width: 479px){
     height: 1078px;
     width: 100%;
    }
    }
    .activity__background-color{
-    background-color: $about-footer-background-color;
+    background-color: #FFF5F6;
     background-size: cover;
-    @include mobile{
+    @media screen and (min-width: 480px) and (max-width: 767px){
         
     }
 }
 .activity__wraper{
-background-color: $about-footer-background-color;
+background-color: #FFF5F6;
   background-size: 100%;
   height: 1229px;
+  display: flex;
+  justify-content: center;
 }
     
 .activity__cow-pic{
@@ -53,17 +55,18 @@ background-color: $about-footer-background-color;
     width: 501px;
     margin-left: 16px;
     margin-right: 100px;
-    @include small{
+    @media screen and (min-width: 320px) and (max-width: 479px){
        width: 280px;
        height: 279px;
-       margin-right: 20px;
+       margin-right: 20px; 
     }
-    @include mobile{
+    @media screen and (min-width: 480px) and (max-width: 767px){
        width: 280px;
        height: 279px; 
+       margin-left: 70px;
        margin-right: 20px;
     }
-    @include tablet{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         width: 336px;
         height: 335px;
         margin-right: 32px;
@@ -83,9 +86,9 @@ line-height: 34px;
 text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-color: $light-subtitle-color;
+color: #FFA5BA;
 padding-top: 60px;
-@include small{
+@media screen and (min-width: 320px) and (max-width: 479px){
     font-size: 27px;
 }
 }
@@ -98,14 +101,14 @@ line-height: 66px;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: $dark-title-color;
+color: #D41443;
 margin-top: 16px;
-@include tablet{
+@media screen and (min-width: 768px) and (max-width: 1199px){
         margin-bottom: 0px;
         font-size: 48px;
         line-height: 55px;
     }
-    @include small{
+    @media screen and (min-width: 320px) and (max-width: 479px){
         font-size: 54px;
         line-height: 66px;
         letter-spacing: 00.04em;
@@ -119,23 +122,23 @@ font-size: 16px;
 line-height: 176%;
 letter-spacing: 0.04em;
 font-weight: bold;
-color: $dark-font-color;
+color: #000000;
 display: flex;
 margin-bottom: 32px;
 margin-top: 100px;
 max-width: 463px;
-@include small{
+@media screen and (min-width: 320px) and (max-width: 479px){
     max-width: 220px;
         font-size: 12px;
         line-height: 162%;
         margin-bottom: 40px;
     }
-@include tablet{
+@media screen and (min-width: 768px) and (max-width: 1199px){
         max-width: 334px;
         font-size: 14px;
         margin-top: 52px;
     }
-@include mobile{
+@media screen and (min-width: 480px) and (max-width: 767px){
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
@@ -151,23 +154,23 @@ font-weight: 500;
 font-size: 14px;
 line-height: 194%;
 letter-spacing: 0.04em;
-color: $light-font-color;
+color: #907E82;
 display: flex;
 margin-bottom: 32px;
 max-width: 463px;
-@include tablet{
+@media screen and (min-width: 768px) and (max-width: 1199px){
         max-width: 334px;
         margin-bottom: 0px;
         line-height: 176%;
     }
-    @include mobile{
+    @media screen and (min-width: 480px) and (max-width: 767px){
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
         margin-bottom: 0px;
         margin-left: 20px;
     }
-    @include small{
+    @media screen and (min-width: 320px) and (max-width: 479px){
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
@@ -183,15 +186,15 @@ font-weight: 500;
 font-size: 14px;
 line-height: 194%;
 letter-spacing: 0.04em;
-color: $light-font-color;
+color: #907E82;
 display: flex;
 margin-bottom: 40px;
-@include tablet{
+@media screen and (min-width: 768px) and (max-width: 1199px){
         max-width: 334px;
         margin-bottom: 0px;
         line-height: 176%;
     }
-    @include mobile{
+    @media screen and (min-width: 480px) and (max-width: 767px){
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
@@ -199,15 +202,15 @@ margin-bottom: 40px;
     }
 }
 .activity__btn{
-background: $white-color;
+background: #FFFFFF;
 border-radius: 22px;
-border: $white-color;
+border: #FFFFFF;
 width: 176px;
 height: 44px;
-@include tablet{
+@media screen and (min-width: 768px) and (max-width: 1199px){
         margin-top: 40px;
     }
-@include mobile{
+@media screen and (min-width: 480px) and (max-width: 767px){
     margin-left: 20px;
 }
 }
@@ -222,7 +225,7 @@ line-height: 21px;
 display: flex;
 align-items: center;
 text-align: center;
-color: $dark-title-color;
+color: #D41443;
 }
 
 
@@ -241,10 +244,10 @@ color: $dark-title-color;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    @include small{
+    @media screen and (min-width: 320px) and (max-width: 479px){
     flex-wrap: nowrap;
     }
-    @include mobile{
+    @media screen and (min-width: 480px) and (max-width: 767px){
         flex-wrap: nowrap;
     }
 }
