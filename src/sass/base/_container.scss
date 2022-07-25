@@ -5,15 +5,16 @@
   margin-right: auto;
   padding: 0 20px;
 
-  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
-    padding: 0 32px;
-  }
+  // @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+  //   padding: 0 32px;
+  // }
 
   @media screen and(min-width: $mobile) {
     max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
+    padding: 0 32px;
     max-width: $tablet;
   }
 
